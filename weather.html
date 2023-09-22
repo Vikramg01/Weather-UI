@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+        }
+        
+        .main{
+            /* border: 1px solid red; */
+            height: 100vh;
+            width: 100vw;
+            background-image:url(https://images.pexels.com/photos/2449543/pexels-photo-2449543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            filter: blur(5px);
+        }
+        .sub{
+            /* border: 2px solid whitesmoke; */
+            height: 70%;
+            width: 80%;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* backdrop-filter: blur(7px); */
+            background: rgba(0,0,0,0.4);
+        }
+        img{
+            height: 40%;
+            width: 40%;
+        }
+        .widget-left{
+            /* border: 1px solid red; */
+            height: 80%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .widget-right{
+            /* border: 1px solid red; */
+            height: 80%;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        
+    </div>
+    <div class="sub">
+        <div class="widget-left">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/984/984632.png?w=740&t=st=1690280554~exp=1690281154~hmac=b68745b890cdd19c0a5ee405d79b0aafbc8fc70391770fd8f01bffa396ceb190" alt=""><br><br>
+            <p style="font-weight: 600;font-size: 40px;">Partly Cloud</p>
+            </div>
+            <div class="widget-right">
+                <div>
+                    <input type="search" name="" id="" placeholder="Enter city name">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #0d0d0d;"></i></button>
+                    <br><br><br><br>
+                    <h2  class="font" style="font-size: 50px;">Ahmedabad</h2>
+                    <p class="font" style="font-weight: 600;font-size: 100px;">25 &#176</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <p>Wind Speed</p>
+                <p>22 kmph</p>
+            </div>
+            <div>
+                <p>Cloud Cover</p>
+                <p>22%</p>
+            </div>
+            <div>
+                <p>Pressure</p>
+                <p>1010mb</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
